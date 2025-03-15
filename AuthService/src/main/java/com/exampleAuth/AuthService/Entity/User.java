@@ -1,16 +1,25 @@
 package com.exampleAuth.AuthService.Entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import jakarta.persistence.Id;
+import lombok.NoArgsConstructor;
 
 @Data
-@Document(collection = "users")
+@Entity
+@Table(name = "users")
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
     @Id
-    private String id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String email;
     private String password;
     private String otp;
