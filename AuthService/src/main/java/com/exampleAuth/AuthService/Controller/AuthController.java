@@ -1,5 +1,6 @@
 package com.exampleAuth.AuthService.Controller;
 
+import com.exampleAuth.AuthService.Entity.User;
 import com.exampleAuth.AuthService.POJO.LoginRequest;
 import com.exampleAuth.AuthService.Service.AuthService;
 import com.exampleAuth.AuthService.Service.ForgotPasswordService;
@@ -32,23 +33,13 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public String register(@RequestBody LoginRequest loginRequest) {
-        return authService.registerUser(loginRequest.getEmail(), loginRequest.getPassword());
+    public String register(@RequestBody User user) {
+        return authService.registerUser(user);
     }
 
     @PostMapping("/login")
     public Map<String, String> login(@RequestBody LoginRequest loginRequest) {
-        return authService.login(loginRequest.getEmail(), loginRequest.getPassword());
-    }
-
-    @PostMapping("/send-otp")
-    public String sendOtp(@RequestParam String email) {
-        return otpService.generateOtp(email);
-    }
-
-    @PostMapping("/validate-otp")
-    public String validateOtp(@RequestParam String email, @RequestParam String otp) {
-        return otpService.validateOtp(email, otp);
+        return authService.login(loginRequest.getEmail(), loginRequest.getPassword(), loginRequest.getOtp());
     }
 
     @PostMapping("/forgot-password")

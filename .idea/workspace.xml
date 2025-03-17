@@ -5,18 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8781bcf1-83f9-4a37-951d-47b2383ee1e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Entity/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/auth.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/POJO/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/POJO/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,7 +42,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Auth Service.executor": "Debug",
+    "Application.Auth Service.executor": "Run",
     "Application.Config Server.executor": "Run",
     "Application.Discovery Service.executor": "Run",
     "Application.Gateway Service.executor": "Run",
@@ -165,12 +174,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Service/AuthService.java</url>
-          <line>49</line>
+          <line>64</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/AuthService/src/main/java/com/exampleAuth/AuthService/Controller/AuthController.java</url>
-          <line>40</line>
+          <line>41</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
